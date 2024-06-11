@@ -5,14 +5,14 @@ void main() {
 
   // Variável de ponto flutuante (double)
   double reais = 1.75;
-  print('reais: $altura');
+  print('reais: $reais');
 
   // Variável booleana (bool)
   bool isEstudante = true;
   print('É estudante: $isEstudante');
 
   // Variável de string (String)
-  String nome = 'lucas';
+  String nome = 'Lucas';
   print('Nome: $nome');
 
   // Lista (List)

@@ -1,19 +1,24 @@
-main () {
-    Pessoa pessoa = Pessoa ("herança", 27);
-    print(pessoa);
-    print(pessoa.nome);
-    print(pessoa.Getsexo());
+void main() {
+  Pessoa pessoa = Pessoa("herança", 27);
+  print(pessoa);
+  print(pessoa.nome);
+  print(pessoa.getSexo());
 }
 
-class Pessoa extends Humano with HumanoMixin
-String none;
-int idade;
-Pessoa(this.nome, this.idade);
+class Pessoa extends Humano with HumanoMixin {
+  String nome;
+  int idade;
+
+  Pessoa(this.nome, this.idade);
+
+  @override
+  String toString() => 'Pessoa(nome: $nome, idade: $idade)';
 }
-//herança
-Class Humano {
-    Strinf GetSexo () => "Masculino";
+
+class Humano {
+  String getSexo() => "Masculino";
 }
-class HumanoMixin {
-    Strinf GetSexo() => "Feminino";
+
+mixin HumanoMixin {
+  String getSexo() => "Feminino";
 }
